@@ -1,0 +1,24 @@
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#calculator{
+    background-color: aqua;
+    display: flex;
+    align-self: center;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    overflow:  hidden;
+    background-color: #333333; 
+   
+
+}
+#screen{
+    height: 30px;
+    background-color: green;
+    
+}
