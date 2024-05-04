@@ -1,24 +1,91 @@
-body{
+body {
+    display: flex;
     justify-content: center;
-    display: flex;
     align-items: center;
-    background-color: black;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-#calculator{
-    background-color: aqua;
+#calculator {
+    background-color: gray;
     display: flex;
-    align-self: center;
-    margin-top: 100px;
-    width: 500px;
-    height: 500px;
-    overflow:  hidden;
-    background-color: #333333; 
-   
-
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#screen{
-    height: 30px;
+
+#screen {
+    height: 80px;
     background-color: green;
-    
+    width: 280px;
+    padding: 15px;
+    border: none;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#buttons input {
+    height: 50px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: lightgrey;
+    transition: background-color 0.3s;
+}
+
+#buttons input:hover {
+    background-color: #ccc;
+}
+
+.red-button {
+    width: 160px;
+    background-color: red;
+}
+
+.number-button {
+    width: calc(25% - 10px);
+}
+
+.blue-button {
+    background-color: blue;
+}
+
+.wide-button {
+    width: calc(25% - 10px);
+}
+
+.operator-button {
+    width: calc(25% - 10px);
+}
+
+#plus-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#plus {
+    width: calc(25% - 10px);
+    height: 150px;
 }
